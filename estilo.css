@@ -1,0 +1,123 @@
+
+
+body {
+    margin: auto 0;
+}
+
+nav {
+color: black;
+border-bottom: 2px solid black;
+
+}
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 2em;
+    margin: 0 10px 0 0;
+/*    height: 50px;*/
+    width: 99.5vw;
+    line-height: 100%;
+}
+
+.grudento {
+    position: fixed;
+    top: 0;
+    /*width: 100%;*/
+    z-index: 100;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px 10px 0 10px;
+}
+
+.botao-contato {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+
+a {
+    color: #0066be;
+    text-decoration: underline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* COVER */
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+.textao {
+    margin: 10px;
+}
+
+
+.zone {
+    color:#FFF;
+    font-size:2em;
+    border:2px solid black;
+    transition: all 1s linear;
+}
+
+.green{
+    background: #56B870;
+}
+
+.red{
+    background: #C655BE;
+}
+
+.yellow{
+    background: #F3AAAA;
+}
+
+.blue{
+    background: #7abcff
+}
+
+
+/*-------------------------------
+    CELULARES E TELAS PEQUENAS
+--------------------------------*/
+
+@media only screen and (max-width: 900px)
+        and (orientation: portrait){
+        .menu {
+            font-size: 1.6em;
+
+        }
+
+        li {
+    padding: 5px 10px 0 10px;
+ }
+}
+
+
+@media only screen and (max-width: 900px)
+        and (orientation: portrait){
+
+
+}
+
+
+
