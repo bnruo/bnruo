@@ -70,11 +70,12 @@ a:hover {
 }
 
 .capa {
-    font-size: 4em;
+   
 }
 
 .textao {
     margin: 10px;
+     font-size: 4em;
 }
 
 .boldim {
@@ -86,7 +87,7 @@ a:hover {
     font-size: 0.5em;
     font-weight: 400;
     font-style: italic;
-    
+
 
 }
 
