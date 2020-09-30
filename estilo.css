@@ -3,6 +3,7 @@
 body {
     margin: auto 0;
     font-family: 'DM Sans', sans-serif;
+    background-color: #808080;
 }
 
 nav {
@@ -43,7 +44,7 @@ li {
 
 
 a {
-    color: #0066be;
+    color: #333333;
     text-decoration: underline;
 }
 
@@ -70,43 +71,95 @@ a:hover {
 }
 
 .capa {
-   
+   transition: all 0.5s linear;
+   border-bottom: 1px solid black;
 }
 
 .textao {
-    margin: 10px;
+    padding: 10px;
      font-size: 4em;
+     line-height: 100%;
+
 }
 
 .boldim {
     font-weight: 700;
-   /* color: #56B870;*/
+     line-height: 100%;
+   
 }
 
 .mini {
     font-size: 0.5em;
     font-weight: 400;
     font-style: italic;
+    line-height: 100%;
 
 
 }
+
+/* INFOS */
+
+
+.embrulho-infos {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1.001fr 3fr;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+}
+
+.titulo {
+font-size: 2em;
+margin: 0;
+padding: 5px 0 0 10px;
+border-right: 2px solid black;
+line-height: 105%;
+
+
+}
+.infos {
+font-size: 1.2em;
+padding: 5px;
+background-color: #808080;
+
+
+}
+
 
 /* GRID */
 
 .embrulho-grid {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
 }
 
 
-.box > img {
+img {
     width: 100%;
-    height: auto;
+height: 100%;
+    background-color: 333333;
+    object-fit: contain;
+}
+
+video {
+      width: 100%;
+  height: auto;
+}
+
+.topo {
+        align-self: flex-start;
 }
 
 .box {
-    background-color: grey;
+    border: 2px solid black;
+    margin: -2px -2px 0 0;
+    background-color: #808080;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
 }
 
 .dupla {
@@ -117,41 +170,18 @@ a:hover {
     grid-row-end: span 2;
 }
 
-
-/*.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+.altona {
+    grid-row-end: span 3;
 }
-.fill img {
-    flex-shrink: 0;
-/*    min-width: 100%;*/
-/*    min-height: 100%*/
 
-
-.zone {
-    color: black;
-    font-size:2em;
-    border:2px solid black;
-    transition: all 1s linear;
+.quadrado {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
 }
 
 .green{
     background: #56B870;
 
-}
-
-.red{
-    background: #C655BE;
-}
-
-.yellow{
-    background: #F3AAAA;
-}
-
-.blue{
-    background: #7abcff
 }
 
 
